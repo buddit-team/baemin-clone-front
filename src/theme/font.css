@@ -1,0 +1,30 @@
+/* [Noto Sans KR] 300, 400, 500, 700 */
+@font-face {
+    font-family: 'NotoSansKR', sans-serif;
+    src: url('../assets/fonts/NotoSansKR/NotoSansKR-Light.otf');
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'NotoSansKR', sans-serif;
+    src: url('../assets/fonts/NotoSansKR/NotoSansKR-Regular.otf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansKR', sans-serif;
+    src: url('../assets/fonts/NotoSansKR/NotoSansKR-Medium.otf');
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'NotoSansKR', sans-serif;
+    src: url('../assets/fonts/NotoSansKR/NotoSansKR-Bold.otf');
+    font-weight: bold;
+}
+
+/* [배달의 민족] 한나는 열한살 */
+@font-face {
+    font-family: 'Hanna11';
+    src: url('../assets/fonts/Bm/otf/BMHANNA_11yrs_otf.otf'),
+        url('../assets/fonts/Bm/ttf/BMHANNA_11yrs_ttf.ttf');
+}

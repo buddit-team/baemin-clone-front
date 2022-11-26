@@ -1,29 +1,16 @@
 import React, {useEffect, useState} from "react";
+import MainHeader from "./components/global/Header/MainHeader";
 import './App.css';
+import SubHeader from "./components/global/Header/SubHeader/indext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
     const [message, setMessage] = useState([]);
 
-    useEffect(() => {
-        fetch("/home")
-            .then((response) => {
-                return response.json();
-            })
-            .then(function (data) {
-                setMessage(data);
-            });
-    }, []);
-
     return (
         <div className="App">
-            <header className="App-header">
-                <p>
-                    baemin project
-                </p>
-                <ul>
-                    {message.map((text, index) => <li key={`${index}-${text}`}>{text}</li>)}
-                </ul>
-            </header>
+            {/* <MainHeader /> */}
+            <SubHeader category="배달" />
         </div>
     );
 }
