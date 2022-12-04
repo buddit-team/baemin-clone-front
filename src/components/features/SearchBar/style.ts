@@ -5,13 +5,7 @@ export const SearchBar = styled.div<SearchBarProps>`
     width: 100%;
     padding: 0 16px 16px;
 
-    ${props => props.type == 'main' && css`
-        border-radius: props 0 0 20px 20px;
-        box-shadow: 0 8px 5px rgba(0,0,0,.15);
-        background-color: ${props.theme.colors.main};
-    `}
-
-    span {
+    .input {
         display: flex;
         align-items: center;
         width: 100%;
@@ -32,6 +26,12 @@ export const SearchBar = styled.div<SearchBarProps>`
             color: ${props => props.theme.colors.main};
         }
     }
+
+    ${props => props.themeType === 'main' && css`
+        border-radius: 0 0 14px 14px;
+        box-shadow: 0 8px 5px rgba(0,0,0,.15);
+        background-color: ${props.theme.colors.main};
+    `};
 `;
 
 

@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100%;
+    max-width: 425px;
+    height: 100vh;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 0 2px 0;
+    border-color: #EEE;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;  
+}
+
+input {
+    background-color: transparent;
+}

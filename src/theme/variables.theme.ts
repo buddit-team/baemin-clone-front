@@ -38,12 +38,12 @@ const breakPoints = {
     mobile: 425,
     tablet: 768
 };
-const variables = {
 
+const variables = {
     colors,
     fontWeights,
     fontSizes,
     breakPoints
 };
 
-export default variables;
+module.exports = variables;

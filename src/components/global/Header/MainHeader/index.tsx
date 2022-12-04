@@ -13,7 +13,6 @@ const MainHeader = (): JSX.Element => {
 
     const [address, setAddress] = React.useState<string>('서울시 강서구 염창동');
     
-
     return (
         <>
             <Header type="main">
@@ -47,7 +46,10 @@ const MainHeader = (): JSX.Element => {
                 >
                 </RandomBox>
             </Header>
-            <SearchBar type="main" />
+            <SearchBar 
+                themeType="main" 
+                onInputClick={() => {}}
+            />
         </>
     )
 };
