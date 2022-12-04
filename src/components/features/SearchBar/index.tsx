@@ -2,16 +2,25 @@ import React from 'react';
 import { SearchBar as StyledSearchBar } from './style';
 
 export type SearchBarProps = {
-    type: 'main' | 'sub';
+    themeType: 'main' | 'sub';
+    onInputClick?: () => void;
 }
 
 const SearchBar = ({
-    type
+    themeType,
+    ...props
 }: SearchBarProps) => {
     const [searchText, setSearchText] = React.useState<string>('팟타이 나와라 뚝딱!');
 
     return (
-        <StyledSearchBar type={type} />
+        <StyledSearchBar 
+            themeType={themeType}
+        >
+            <span 
+                className="input"
+                onClick={() => { props.onInputClick && props.onInputClick()} }
+            >{searchText}</span>
+        </StyledSearchBar>
     )
 
 };
