@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { isTemplateExpression } from "typescript";
-import SubHeader from "../global/Header/SubHeader/indext";
+import SubHeader from "../../components/Header/SubHeader/indext";
 
 export default function RestarantList() {
   const { categoryId } = useParams();

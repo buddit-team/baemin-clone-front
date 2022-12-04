@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BottomNav from "../BottomNav/BottomNav";
-import MainHeader from "../global/Header/MainHeader";
-import Search from "../Search/Search";
+import BottomNav from "../../components/BottomNav/BottomNav";
+import MainHeader from "../../components/Header/MainHeader";
+import Search from "../../components/Search/Search";
 import SearchPage from "../SearchPage";
 
 export default function Home() {

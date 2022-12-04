@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Delivery from "./components/Delivery/Delivery";
-import Packaging from "./components/Packaging/Packaging";
-import NotFound from "./components/NotFound";
-import Home from "./components/Home/Home";
+import Delivery from "./pages/Delivery/Delivery";
+import Packaging from "./pages/Packaging/Packaging";
+import NotFound from "./pages/NotFound";
+import Home from "./pages/Home/Home";
 import Root from "./components/Root/Root";
-import RestaurantList from "./components/RestaurantList/RestaurantList";
-import RestaurantDetail from "./components/RestaurantDetail/RestaurantDetail";
+import RestaurantList from "./pages/RestaurantList/RestaurantList";
+import RestaurantDetail from "./pages/RestaurantDetail/RestaurantDetail";
 
 const router = createBrowserRouter([
   {

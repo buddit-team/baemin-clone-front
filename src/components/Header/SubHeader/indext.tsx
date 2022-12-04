@@ -2,7 +2,7 @@ import { faArrowLeft, faCartShopping, faHouse } from '@fortawesome/free-solid-sv
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Category, Header, Menus, Utils } from "../style";
-import Address from '../../../features/Address';
+import Address from '../../Address';
 
 type SubHeaderProps = {
     category: string;

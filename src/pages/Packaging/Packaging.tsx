@@ -1,6 +1,6 @@
 import React from "react";
-import BottomNav from "../BottomNav/BottomNav";
-import SubHeader from "../global/Header/SubHeader/indext";
+import BottomNav from "../../components/BottomNav/BottomNav";
+import SubHeader from "../../components/Header/SubHeader/indext";
 
 const Packaging = () => {
   return (

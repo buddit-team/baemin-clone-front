@@ -1,5 +1,5 @@
 import React from 'react'
-import RoundButton, { RoundButtonProps } from '../Button';
+import RoundButton, { RoundButtonProps } from '../uiCommon/Button';
 
 type ScrollListProps = {
     items: Array<{
