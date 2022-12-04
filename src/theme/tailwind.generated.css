@@ -581,9 +581,6 @@ video {
 .text-left {
   text-align: left;
 }
-.align-middle {
-  vertical-align: middle;
-}
 
 * {
     box-sizing: border-box;

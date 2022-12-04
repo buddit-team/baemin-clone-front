@@ -1,7 +1,7 @@
 import { faArrowLeft, faCaretDown, faCaretUp, faCross, faMagnifyingGlass, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import RoundButton from '../ui/Button';
+import RoundButton from '../../components/uiCommon/Button';
 
 // 나중에 공통으로 뽑기
 const sectionCssProps = 'flex flex-col w-full p-2';

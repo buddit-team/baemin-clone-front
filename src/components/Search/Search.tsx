@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Address } from "../global/Header/style";
+import { Header, Address } from "../Header/style";
 import { SearchForm, Button, Input } from "./style";
 
 export default function Search() {

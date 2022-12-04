@@ -2,7 +2,7 @@ import React from 'react';
 import { Address, Header, Menus, RandomBox, Utils } from '../style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTableCells, faBell, faFaceGrinTongue } from '@fortawesome/free-solid-svg-icons';
-import SearchBar from '../../../features/SearchBar';
+import SearchBar from '../../SearchBar';
 
 interface Props {
     address: string;

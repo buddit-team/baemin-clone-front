@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import BottomNav from "../BottomNav/BottomNav";
-import SubHeader from "../global/Header/SubHeader/indext";
+import BottomNav from "../../components/BottomNav/BottomNav";
+import SubHeader from "../../components/Header/SubHeader/indext";
 
 const Delivery = () => {
   const [text, setText] = useState("");
