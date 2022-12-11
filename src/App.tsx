@@ -8,6 +8,12 @@ import Home from "./pages/Home/Home";
 import Root from "./components/Root/Root";
 import RestaurantList from "./pages/RestaurantList/RestaurantList";
 import RestaurantDetail from "./pages/RestaurantDetail/RestaurantDetail";
+import SearchPage from "./pages/SearchPage";
+import Likes from "./pages/Likes/Likes";
+import MenuDetail from "./pages/MenuDetail/MenuDetail";
+import MyPage from "./pages/MyPage/MyPage";
+import OrderList from "./pages/OrderList/OrderList";
+import Pay from "./pages/Pay/Pay";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +24,10 @@ const router = createBrowserRouter([
     /* 중첩 라우트 */
     children: [
       { index: true, element: <Home /> },
+      {
+        path: "/search",
+        element: <SearchPage />,
+      },
       {
         path: "/delivery",
         element: <Delivery />,
@@ -33,6 +43,26 @@ const router = createBrowserRouter([
       {
         path: "/restaurant/:restaurantId",
         element: <RestaurantDetail />,
+      },
+      {
+        path: "/likes",
+        element: <Likes />,
+      },
+      {
+        path: "/menuDetail/:menuId",
+        element: <MenuDetail />,
+      },
+      {
+        path: "/mypage",
+        element: <MyPage />,
+      },
+      {
+        path: "/orderList",
+        element: <OrderList />,
+      },
+      {
+        path: "/pay",
+        element: <Pay />,
       },
     ],
   },
