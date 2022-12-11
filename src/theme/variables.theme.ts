@@ -17,15 +17,15 @@ const colors = {
     gray900: '#212121'
 };
 
-const fontWeights = {
+const fontWeight = {
     lighter: 300,
     normal: 400,
     medium: 500,
     bold: 700
 };
 
-const fontSizes = {
-    xss: '0.75rem',
+const fontSize = {
+    xxs: '0.75rem',
     xs: '0.81125rem',
     s: '0.875rem',
     base: '0.9375rem',
@@ -41,8 +41,8 @@ const breakPoints = {
 
 const variables = {
     colors,
-    fontWeights,
-    fontSizes,
+    fontWeight,
+    fontSize,
     breakPoints
 };
 
