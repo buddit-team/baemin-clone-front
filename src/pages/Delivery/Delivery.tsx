@@ -1,32 +1,65 @@
 import React, { useState } from "react";
+import styled, { css } from "styled-components";
 import { useNavigate } from "react-router-dom";
 import BottomNav from "../../components/BottomNav/BottomNav";
 import SubHeader from "../../components/Header/SubHeader/indext";
+import { categoryData } from "./CategoryData";
 
 const Delivery = () => {
-  const [text, setText] = useState("");
+  const [categoryId, setCategoryId] = useState("");
   const navigate = useNavigate();
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setText(e.target.value);
-  };
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+
+  const handleClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     e.preventDefault();
-    setText("");
-    navigate(`/delivery/${text}`);
+    setCategoryId(e.currentTarget.id);
+    navigate(`/delivery/${e.currentTarget.id}`);
   };
+
+  const GridContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 10px;
+    .item {
+      text-align: center;
+    }
+  `;
+
+  const GridItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  `;
 
   return (
     <div>
       <SubHeader category="배달" />
-      <h1>Delivery</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="category id"
-          value={text}
-          onChange={handleChange}
-        />
-      </form>
+      <GridContainer>
+        {categoryData.map((category) => {
+          return (
+            <GridItem
+              id={category.id}
+              key={category.id}
+              onClick={(e) => {
+                handleClick(e);
+              }}
+            >
+              <img
+                src={category.img}
+                alt={category.alt}
+                style={{
+                  width: "32px",
+                  height: "32px",
+                }}
+              ></img>
+              <div style={{ marginTop: "5px" }}>{category.title}</div>
+            </GridItem>
+          );
+        })}
+      </GridContainer>
       <BottomNav />
     </div>
   );
