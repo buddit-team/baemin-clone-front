@@ -67,7 +67,7 @@ export const Back = styled.button`
 
 export const Category = styled.span`
     font-family: Hanna11;
-    font-size: ${props => props.theme.fontSize.l};
+    font-size: ${props => props.theme.fontSizes.l};
     border: 0;
     letter-spacing: 1px;
     line-height: 24px;
