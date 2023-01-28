@@ -23,7 +23,7 @@ export default function RoundButton({
 }: RoundButtonProps) {
 
     const Tag = tag;
-    const twClassName = `flex flex-row gap-1 items-center w-auto py-${pY} px-${pX} rounded-full bg-${bgColor}` 
+    const twClassName = `flex flex-row gap-1 items-center w-auto py-${pY} px-${pX} rounded-full bg-${bgColor} cursor-pointer` 
                         + (props.twClass? ' ' + props.twClass : '');
 
     return (
