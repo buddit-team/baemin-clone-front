@@ -22,7 +22,7 @@ import quickIcon from '../../assets/icons/category/ico-quick.png';
 import heartIcon from '../../assets/icons/category/ico-heart.png';
 import thumbsIcon from '../../assets/icons/category/ico-thumbs.png';
 import discountIcon from '../../assets/icons/category/ico-discount.png';
-// data (test)
+// data
 import { eventCards, giftCards, localCards, recentCards, saleCards, userMenus } from "./data";
 
 export default function Home() {
