@@ -15,9 +15,9 @@ export const Address = styled.div<{
                         props.theme.colors[props.fontColor]
                         : props.theme.colors.gray900
     };
-    font-size: ${props => props.fontSize && props.theme.fontSizes.hasOwnProperty(props.fontSize)?
-                           props.theme.fontSizes[props.fontSize]
-                           : props.theme.fontSizes.base 
+    font-size: ${props => props.fontSize && props.theme.fontSize.hasOwnProperty(props.fontSize)?
+                           props.theme.fontSize[props.fontSize]
+                           : props.theme.fontSize.base 
     };
 
     &::after {
