@@ -14,19 +14,18 @@ const colors = {
     gray600: '#757575',
     gray700: '#616161',
     gray800: '#424242',
-    gray900: '#212121',
-    white: '#FFFFFF'
+    gray900: '#212121'
 };
 
-const fontWeight = {
+const fontWeights = {
     lighter: 300,
     normal: 400,
     medium: 500,
     bold: 700
 };
 
-const fontSize = {
-    xxs: '0.75rem',
+const fontSizes = {
+    xss: '0.75rem',
     xs: '0.81125rem',
     s: '0.875rem',
     base: '0.9375rem',
@@ -42,8 +41,8 @@ const breakPoints = {
 
 const variables = {
     colors,
-    fontWeight,
-    fontSize,
+    fontWeights,
+    fontSizes,
     breakPoints
 };
 
