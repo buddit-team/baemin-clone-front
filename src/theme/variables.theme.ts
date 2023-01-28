@@ -14,7 +14,8 @@ const colors = {
     gray600: '#757575',
     gray700: '#616161',
     gray800: '#424242',
-    gray900: '#212121'
+    gray900: '#212121',
+    white: '#FFFFFF'
 };
 
 const fontWeight = {

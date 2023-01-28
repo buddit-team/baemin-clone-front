@@ -86,7 +86,6 @@ export default function DropDown(props: DropDownProps) {
         }
     }, [contentsRef.current])
 
-
   return (
     <div className="flex flex-col">
         <button
