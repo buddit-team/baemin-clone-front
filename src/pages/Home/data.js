@@ -1,4 +1,3 @@
-// dummy
 // icons
 import { faCirclePlay, faGift, faHeart, faTicket } from "@fortawesome/free-solid-svg-icons";
 // card images
