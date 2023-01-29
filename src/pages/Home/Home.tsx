@@ -9,7 +9,7 @@ import SearchPage from "../SearchPage";
 import { BoxCategory, IconCategory } from "../../components/uiCommon/BoxCategory";
 import ScrollSection from "../../components/uiCommon/ScrollSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// icons
+// icons - test pr
 import truckIcon from '../../assets/icons/category/ico-truck.png';
 import giftIcon from '../../assets/icons/category/ico-gift.png';
 import liveIcon from '../../assets/icons/category/ico-live.png';
